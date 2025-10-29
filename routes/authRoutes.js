@@ -13,8 +13,8 @@ router.get(
 router.get(
   "/google/callback",
   passport.authenticate("google", {
-    successRedirect: "http://localhost:5173/dashboard",
-    failureRedirect: "http://localhost:5173/login",
+    successRedirect: "https://foodrecipe-frontend-ez61.onrender.com/dashboard",
+    failureRedirect: "https://foodrecipe-frontend-ez61.onrender.com/login",
   })
 );
 
