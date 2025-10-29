@@ -37,3 +37,10 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
+app.use(
+  cors({
+    origin: ["https://foodrecipe-frontend-ez61.onrender.com"],
+    credentials: true,
+  })
+);
